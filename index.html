@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .material-symbols-outlined {
+          font-variation-settings:
+                  'FILL' 0,
+                  'wght' 400,
+                  'GRAD' 0,
+                  'opsz' 48;
+          background: saddlebrown;
+          color: white;
+          padding: 5px;
+          font-size: 40px;
+          border-radius: 50%;
+      }
+      .bg-header {
+          background-image: url("images/header.jpg");
+          background-color: #fafbfc;
+          height: 300px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+      }
+      .services {
+          margin-top: 15px;
+          background-color: #fafbfc;
+      }
+      h2:before,
+      h2:after {
+          background-color: saddlebrown;
+          content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 20%;
+      }
+      h2::before {
+          right: 0.5em;
+          margin-left: -50%;
+      }
+      h2::after {
+          left: 0.5em;
+          margin-right: -50%;
+      }
+      .btn-custom {
+          background-color: saddlebrown;
+          color: white;
+      }
+      .btn-custom:hover {
+          background-color: #622e0a;
+          color: white;
+      }
+      .cover {
+          background: no-repeat center/cover;
+      }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/owl.png" alt="Logo" height="30">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <div class="container-fluid bg-light p-5 bg-header mb-5">
+      <h1 class="display-4" style="font-weight: bolder"><strong>Pecinta Hewan</strong></h1>
+      <p class="lead" style="font-weight: bolder">Kanal Situs Seputar Hewan</p>
+      <p>Dapatkan pelayanan untuk hewan liar atau peliharaan.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Pelajari</a>
+  </div>
+
+  <section id="services" class="container-fluid services">
+      <div class="row text-center">
+          <div class="col-12 mb-4">
+              <h2 class="display-4" style="margin-top: 3rem!important;">Mengapa memilih kami?</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <span class="material-symbols-outlined">list</span>
+              <h3>Fasilitas Mantab</h3>
+              <p>Fasilitas yang kami sediakan sangat lengkap dan nyaman</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <span class="material-symbols-outlined">bolt</span>
+              <h3>Ditangani Ahli</h3>
+              <p>Setiap hewan yang datang ke tempat akan ditangani oleh ahlinya</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <span class="material-symbols-outlined">local_convenience_store</span>
+              <h3>Aktif 24 Jam</h3>
+              <p>Dapatkan pelayanan yang aktif selama 24 Jam</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <span class="material-symbols-outlined">volunteer_activism</span>
+              <h3>Dengan setulus hati</h3>
+              <p>Perlakuan hewan akan disesuaikan dengan kebutuhan dan setulus hati</p>
+          </div>
+
+          <div class="col-12 pt-3 mb-5">
+              <a href="#" class="btn btn-outline-danger btn-lg" target="_blank">Other Service</a>
+          </div>
+      </div>
+  </section>
+
+  <section id="products" class="container">
+      <div class="row text-center">
+          <div class="col-12 pb-4">
+              <h2 class="display-4 text-center mb-5" style="margin-top: 3rem!important;">Produk Kami</h2>
+          </div>
+
+          <div class="card mb-3 me-3" style="max-width: 540px;">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/grooming.jpg" alt="pet grooming" class="img-fluid rounded-start" style="max-height: 150px; max-width: 150px">
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h4 class="card-title">Grooming Peliharaan</h4>
+                          <p class="card-text">Proses grooming dilakukan oleh ahli yang berpengalaman dengan treatment penuh sayang.</p>
+                          <a href="#" class="btn btn-custom">Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card mb-3 me-3" style="max-width: 540px;">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/petshotel.jpg" alt="pets hotel" class="img-fluid rounded-start" style="max-height: 150px; max-width: 150px">
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h4 class="card-title">Hotel Pet</h4>
+                          <p class="card-text">Akomodasi kami nyaman dan tersertifikasi aman menyediakan tempat untuk kucing dan anjing menginap ketika Anda sedang pergi!</p>
+                          <a href="#" class="btn btn-custom">Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card mb-3 me-3" style="max-width: 540px;">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/training.jpg" alt="pet training" class="img-fluid rounded-start" style="max-height: 150px; max-width: 150px">
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h4 class="card-title">Training</h4>
+                          <p class="card-text">Tersedia berbagai macam pelatihan untuk anjing mulai dari masih puppy, pemula hingga mahir.</p>
+                          <a href="#" class="btn btn-custom">Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card mb-3 me-3" style="max-width: 540px;">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/adoption.jpg" alt="pet adoption" class="img-fluid rounded-start" style="max-height: 150px; max-width: 150px">
+                  </div>
+
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h4 class="card-title">Adopsi Peliharaan</h4>
+                          <p class="card-text">Ambil langkah menyediakan rumah hangat bagi hewan yang membutuhkan dan mulailah mengadopsi!</p>
+                          <a href="#" class="btn btn-custom">Selengkapnya</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="about"  class="bg-light">>
+        <div class="container">
+            <h2 class="display-4 text-center mb-5" style="margin-top: 5rem!important;">Tentang kami </h2>
+            <div class="row">
+                <!--gambar & text pertama-->
+                <div class="col-12 col-md-6">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium at consectetur
+                        culpa cupiditate dolore fuga laboriosam nihil provident! At dolorem eligendi exercitationem
+                        explicabo laborum quis, sed suscipit. Officia, ratione.
+                    </div>
+                    <div>Dolorem fuga possimus provident repudiandae? Ab at commodi cum debitis dicta ea eaque enim
+                        error facere, fugit nam necessitatibus officia reprehenderit repudiandae sapiente ullam ut. Aut
+                        expedita itaque sapiente tempore?
+                    </div>
+                    <div>Ad consequatur cum dolorem dolorum, eos facilis fuga inventore iste, labore laborum laudantium
+                        magnam minus natus nobis officiis optio perferendis perspiciatis provident quae quia ratione
+                        recusandae reprehenderit similique soluta, totam.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class=" vh-100 cover" style="background-image: url('images/owl-about.jpg');"></div>
+                </div>
+
+                <!--gambar & teks kedua-->
+                <div class="col-12 col-md-6">
+                    <div class=" vh-100 cover" style="background-image: url('images/bird.jpg');"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aperiam autem corporis
+                        dolorum eos, esse harum illum impedit maiores maxime nobis perferendis praesentium quia quos
+                        rerum sint vel voluptas!
+                    </div>
+                    <div>Aliquam ducimus excepturi fuga maxime quaerat quam quod reiciendis vero! Accusantium adipisci
+                        deserunt dignissimos dolor, eligendi exercitationem id itaque iure non nostrum optio porro
+                        praesentium ratione sed tenetur unde voluptate?
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section id="contact" class="container-fluid text-center" style="background-color: #e9f2eb; padding-top: 25px;">
+        <h2 class="display-4 pb-4">Hubungi Kami</h2>
+        <p class="lead pb-3">Kirim pesan untuk bergabung kami.</p>
+        <a href="#" class="btn btn-custom btn-lg mb-4">WhatsApp Kami</a>
+  </section>
+
+  <footer class="bg-dark">
+        <div class="col-lg-12" style="padding:10px">
+            <!--<div style="text-align: center;">
+                <a href="#" class="text-light"><i class=" fab fa-facebook"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+            </div> -->
+            <p class="text-center text-white">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Pecinta Hewan</p>
+        </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
